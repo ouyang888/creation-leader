@@ -1,0 +1,18 @@
+<view>
+  <view class="topImg">
+    <image src="{{imgUrl +'loginLogo.png'}}"></image>
+  </view>
+
+  <view class="cdFlex">
+    <image src="{{frontsrc =='' ? imgUrl +'cdfront.png' : frontsrc}}" id="1" bindtap="gotoShow"></image>
+    <image src="{{reversesrc == '' ? imgUrl +'cdreverse.png' : reversesrc}}" id="2" bindtap="gotoShow"></image>
+  </view>
+
+  <view style="margin-top:80rpx;">
+    <view class="loginBtn" wx:if="{{frontsrc == '' || reversesrc == ''}}">提交审核</view>
+    <view class="loginBtn" wx:if="{{frontsrc != '' && reversesrc != ''}}" style="background:#3390FF">提交审核</view>
+  </view>
+
+  <view class="bottomFont">照片格式为JPG或PNG，不超过2M，仅用于资料审核</view>
+
+</view>

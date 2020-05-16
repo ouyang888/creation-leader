@@ -1,0 +1,30 @@
+<view>
+  <view class="topImg">
+    <image src="{{imgUrl +'loginLogo.png'}}"></image>
+  </view>
+  <view class="flexBox">
+    <view class="iconImg">+86
+      <image src="{{imgUrl +'rightIcon.png'}}"></image>
+    </view>
+    <input class="phoneInput" type="number" maxlength="11" placeholder="请输入手机号" value="{{phone}}" bindinput="phoneChange" />
+  </view>
+  <view class="flexPsdBox">
+    <input class="passwordInput" placeholder="请输入密码" />
+    <view class="eyesImg">
+      <image src="{{imgUrl +'eyes.png'}}"></image>
+    </view>
+  </view>
+  <view style="margin-top:80rpx;">
+    <view class="loginBtn" bindtap="login">登录</view>
+  </view>
+  <view class="registerBox">
+    <view class="registerFont">找回密码
+      <image src="{{imgUrl +'rightIcon.png'}}"></image>
+    </view>
+    <view class="registerFont" style="padding-left:20rpx;padding-right:20rpx;">|</view>
+    <view class="registerFont" bindtap="gotoRegister">注册账号
+      <image src="{{imgUrl +'rightIcon.png'}}"></image>
+    </view>
+  </view>
+  <view class="bottomFont">登录即代表您同意<text>商家协议和隐私政策</text></view>
+</view>

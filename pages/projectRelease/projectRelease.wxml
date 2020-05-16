@@ -1,0 +1,28 @@
+<view class="bg">
+  <view class="box">
+    <view class="houseBox">
+      <image src="{{imgUrl + 'huxing.png'}}"></image>
+      <view class="houseFont">A户型80m</view>
+    </view>
+    <view class="houseBox">
+      <image src="{{imgUrl + 'huxing.png'}}"></image>
+      <view class="houseFont">A户型80m</view>
+    </view>
+    <view class="houseBox">
+      <image src="{{imgUrl + 'huxing.png'}}"></image>
+      <view class="houseFont">A户型80m</view>
+    </view>
+    <view class="houseBox">
+      <image src="{{imgUrl + 'huxing.png'}}"></image>
+      <view class="houseFont">A户型80m</view>
+    </view>
+    <view class="houseBox">
+      <image src="{{imgUrl + 'huxing.png'}}"></image>
+      <view class="houseFont">A户型80m</view>
+    </view>
+    <view class="houseBox">
+      <image src="{{imgUrl + 'huxing.png'}}"></image>
+      <view class="houseFont">A户型80m</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,104 @@
+.topImg {
+  text-align: center;
+  margin-top: 167rpx;
+}
+
+.topImg image {
+  width: 132rpx;
+  height: 264rpx;
+}
+
+.flexBox {
+  display: flex;
+  align-items: center;
+  margin: 30rpx;
+  height: 50rpx;
+  padding: 40rpx 30rpx 30rpx;
+  border-bottom: 1px solid #e4e9f0;
+}
+
+.flexBox view {
+  font-size: 13px;
+  color: #000;
+}
+
+.iconImg {
+  display: flex;
+  align-items: center;
+}
+
+.iconImg image {
+  width: 14rpx;
+  height: 24rpx;
+  padding-left: 30rpx;
+}
+
+.phoneInput {
+  font-size: 32rpx;
+  padding-left: 40rpx;
+}
+
+.passwordInput {
+  font-size: 32rpx;
+}
+
+.eyesImg image {
+  width: 34rpx;
+  height: 23rpx;
+}
+
+.flexPsdBox {
+  display: flex;
+  align-items: center;
+  margin: 30rpx;
+  height: 50rpx;
+  padding: 40rpx 30rpx 30rpx;
+  border-bottom: 1px solid #e4e9f0;
+  justify-content: space-between;
+}
+
+.loginBtn {
+  width: 90%;
+  background: #3390ff;
+  color: #fff;
+  font-size: 28rpx;
+  height: 80rpx;
+  border-radius: 39rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.registerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+
+.registerFont {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.registerFont image {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.bottomFont {
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.bottomFont text {
+  color: #3390ff;
+}
+
+.code {
+  font-size: 28rpx;
+  color: #3390ff;
+}

@@ -1,0 +1,28 @@
+<view>
+  <view class="topImg">
+    <image src="{{imgUrl +'loginLogo.png'}}"></image>
+  </view>
+  <view class="flexBox">
+    <view class="iconImg">注册点：</view>
+    <image style="width:22rpx;height:32rpx;" src="{{imgUrl +'location.png'}}"></image>
+    <input disabled="disabled" style="font-size:32rpx;padding-left:20rpx;padding-right:60rpx;" placeholder="请选择小区地址" />
+    <image src="{{imgUrl +'rightIcon.png'}}"></image>
+  </view>
+  <view class="flexBox">
+    <view class="iconImg">小区：</view>
+    <input class="phoneInput" placeholder="请输入小区名称" />
+  </view>
+  <view class="flexBox">
+    <view class="iconImg">法人：</view>
+    <input class="phoneInput" placeholder="请输入经营者或者法人名称" />
+  </view>
+  <view class="flexBox">
+    <view class="iconImg">身份证：</view>
+    <input style="font-size:32rpx;padding-left:27rpx;" type="idcard" placeholder="请输入身份证号码" />
+  </view>
+
+  <view style="margin-top:80rpx;">
+    <!-- <view class="loginBtn">下一步</view> -->
+    <view class="loginBtn" style="background:#3390FF" bindtap="next">下一步</view>
+  </view>
+</view>
