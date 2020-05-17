@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/houseEditType/houseEditType",
     "pages/houseList/houseList",
     "pages/houseType/houseType",
     "pages/index/index",

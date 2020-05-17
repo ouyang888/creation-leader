@@ -1,0 +1,79 @@
+.house-edit-type .product-pic .item {
+  height: 500rpx;
+}
+
+.house-edit-type .product-detail {
+  background: #fff;
+  box-shadow: 0px 7rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(42, 42, 42, 1);
+  padding-top: 39rpx;
+  padding-bottom: 36rpx;
+  padding-left: 199rpx;
+}
+
+.house-edit-type .product-detail .item {
+  margin-bottom: 37rpx;
+}
+
+.house-edit-type .product-detail .item.red {
+  color: #FF2522;
+}
+
+.house-edit-type .product-detail .item:last-child {
+  margin-bottom: 0;
+}
+
+.house-edit-type .edit-product {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 7px 27px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 20rpx;
+}
+
+.house-edit-type .edit-product {
+  padding: 30rpx
+}
+
+.house-edit-type .edit-product .item {
+  display: flex;
+  align-items: center;
+  height: 99rpx;
+  padding-left: 169rpx;
+  border-bottom: 2rpx solid #E4E9F0;
+}
+
+.house-edit-type .edit-product .item .item-input {
+  width: 100%;
+}
+
+.house-edit-type .edit-product .item .item-input.red {
+  color: #FF2522;
+}
+
+.house-edit-type .edit-product .item.not-border {
+  border-bottom: 0;
+}
+
+.house-edit-type .edit-product .save-bottom{
+  margin-top: 39rpx;
+}
+
+.house-edit-type .edit-product .save-bottom .btn {
+  width:690rpx;
+  height: 80rpx;
+  padding: 0;
+  line-height: 80rpx;
+  background: #3390FF;
+  border-radius: 39rpx;
+  font-weight: normal;
+  color: #fff;
+  font-size: 28rpx;
+}
+
+.house-edit-type .edit-product .save-bottom .btn:active{
+  opacity: 0.6;
+}

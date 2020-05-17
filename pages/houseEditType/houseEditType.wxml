@@ -1,0 +1,40 @@
+<view class="house-edit-type bg">
+	<!--轮播图 -->
+	<swiper autoplay="true" interval="3000" duration="500" circular="true" class="product-pic">
+		<block>
+			<swiper-item>
+				<view class="item" style="background:red;">1</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:blue;">2</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:green;">3</view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<!-- 商品详情 -->
+	<view class="product-detail">
+		<view class="item">无</view>
+		<view class="item">1.4凤铝双层中空玻璃铝合金窗</view>
+		<view class="item">50型平开推拉窗</view>
+		<view class="item red">498元/㎡</view>
+	</view>
+
+	<!-- 编辑商品尺寸 -->
+	<view class="edit-product">
+		<view class="item">
+			<input type="number" class="item-input" />㎡
+		</view>
+		<view class="item">
+			<input type="number" class="item-input red" />元
+		</view>
+		<view class="item not-border">
+			1.4厚双层中空钢化玻璃
+		</view>
+		<view class="save-bottom">
+			<button class="btn">保存</button>
+		</view>
+	</view>
+</view>
