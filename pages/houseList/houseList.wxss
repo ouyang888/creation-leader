@@ -1,0 +1,171 @@
+/**index.wxss**/
+.home {
+  display: flex;
+}
+
+.home .left-tab {
+  width: 100px;
+  height: 100vh;
+  background-color: #F8F9FB;
+}
+
+.home .left-tab .item-tab {
+  position: relative;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #666666;
+  font-size: 24rpx;
+  font-family: SourceHanSansCN-Regular;
+}
+
+.home .left-tab .item-tab.cur {
+  background-color: #fff;
+  color: #3490FF;
+}
+
+.home .left-tab .item-tab .cur-line {
+  position: absolute;
+  left: 0;
+  width: 6rpx;
+  height: 30rpx;
+  top: 37rpx;
+  border-radius: 0 30% 30% 0;
+  background: #3490FF;
+}
+
+.home .right-list {
+  height: 100vh;
+}
+
+.home .right-list .item-product {
+  font-family: Source Han Sans CN;
+  border-bottom: 1px solid #E4E9F0;
+}
+
+.home .right-list .item-product.not-project {
+  font-family: Source Han Sans CN;
+  border-bottom: 0;
+}
+
+.home .right-list .item-product .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  font-size: 28rpx;
+  padding: 0 33rpx 0 20rpx;
+  box-sizing: border-box;
+}
+
+.home .right-list .item-product .title .icon-bottom {
+  width: 24rpx;
+  height: 14rpx;
+  margin-top: -4px;
+}
+
+.home .right-list .item-product .product-list .item {
+  display: flex;
+  padding: 0 20rpx 20rpx 20rpx;
+  font-family: Source Han Sans CN;
+}
+
+.home .right-list .item-product .product-list .pic {
+  width: 160rpx;
+  min-width: 160rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background: #E4E9F0;
+  margin-right: 20rpx;
+}
+
+.home .right-list .item-product .product-list .detail {
+  width: 100%;
+}
+
+.home .right-list .item-product .product-list .detail .product-name {
+  color: #2A2A2A;
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-bottom: 9rpx;
+}
+
+.home .right-list .item-product .product-list .detail .product-name .product-icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 10rpx;
+  vertical-align: middle;
+  margin-top: -5rpx;
+}
+
+.home .right-list .item-product .product-list .detail .product-size-name {
+  color: #999999;
+  font-size: 22rpx;
+  margin-bottom: 9rpx;
+}
+
+.home .right-list .item-product .product-list .detail .product-type-list {
+  display: flex;
+  font-size: 20rpx;
+  color: #666;
+  margin-bottom: 9rpx;
+}
+
+.home .right-list .item-product .product-list .detail .product-type-list .item {
+  background: #F3F3F3;
+  border-radius: 10rpx;
+  height: 28rpx;
+  margin-right: 15rpx;
+  padding: 0 10rpx;
+}
+
+.home .right-list .item-product .product-list .detail .product-money {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .right-list .item-product .product-list .detail .product-money .money-num {
+  color: #FF2522;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.home .right-list .item-product .product-list .detail .product-money .money-rmb {
+  font-size: 24rpx;
+  margin-right: 6rpx;
+}
+
+.home .right-list .item-product .product-list .detail .product-money .check-handle {
+  margin-top: -2px;
+  margin-right: 10rpx;
+}
+
+checkbox .wx-checkbox-input {
+  width: 46rpx;
+  height: 46rpx;
+  border-radius: 50%;
+}
+
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #0394F0;
+  border-color: #0394F0;
+}
+
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 24rpx;
+  height: 16rpx;
+  line-height: 16rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-70%, -50%) scale(1);
+  -webkit-transform: translate(-70%, -50%) scale(1);
+}
+
+.home .right-list .item-product .product-list .detail .product-money .product-handle:active {
+  opacity: 0.5;
+}

@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/houseList/houseList",
+    "pages/houseType/houseType",
+    "pages/index/index",
     "pages/projectRelease/shopList/shopList",
     "pages/projectRelease/projectRelease",
     "pages/login/login",
     "pages/register/authentication/authentication",
     "pages/register/nextRegister/nextRegister",
-    "pages/register/register",
-    "pages/index/index"
+    "pages/register/register"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,6 +16,8 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
+
+
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

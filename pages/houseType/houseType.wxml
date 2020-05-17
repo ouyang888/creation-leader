@@ -1,0 +1,74 @@
+<view class="house-type">
+	<!--轮播图 -->
+	<swiper autoplay="true" interval="3000" duration="500" circular="true" class="product-pic">
+		<block>
+			<swiper-item>
+				<view class="item" style="background:red;">1</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:blue;">2</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:green;">3</view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<!-- 列表 -->
+	<view class="table-list">
+		<view class="tr title">
+			<view class="td">规格名</view>
+			<view class="td">规格值</view>
+			<view class="td">单价(元)</view>
+			<view class="td">数量</view>
+			<view class="td">总价(元)</view>
+			<view class="td">图片</view>
+		</view>
+		
+		<view class="tr detail">
+			<view class="td">尺寸</view>
+			<view class="td">36</view>
+			<view class="td">565</view>
+			<view class="td">2</view>
+			<view class="td cur">1000</view>
+			<view class="td pic">
+				<view class="pic-box">
+					<image class="icon" src="{{servenImg + 'shopImg.png'}}" mode="scaleToFill"></image>
+				</view>
+			</view>
+		</view>
+
+    <view class="tr detail">
+			<view class="td">尺寸</view>
+			<view class="td">36</view>
+			<view class="td">565</view>
+			<view class="td">2</view>
+			<view class="td cur">1000</view>
+			<view class="td pic">
+				<view class="pic-box">
+					<image class="icon" src="{{servenImg + 'add_type.png'}}" mode="scaleToFill"></image>
+				</view>
+			</view>
+		</view>
+
+  
+
+  
+
+    
+
+  
+
+   
+
+   
+
+    
+
+	</view>
+
+  <!-- 保存 -->
+  <view class="save-btn">
+    <button class="btn">保存</button>
+  </view>
+</view>
