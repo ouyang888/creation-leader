@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="home">
+	<!-- 左侧栏 -->
+	<scroll-view scroll-y="true" scroll-with-animation="true" class="left-tab">
+		<view class="{{leftTabActived===index? 'item-tab cur':'item-tab'}}" bindtap="handleTab" data-index="{{index}}" wx:for="{{tabList}}" wx:for-index="index" wx:for-item="itemName" wx:key="index">
+			<view class="{{leftTabActived===index? 'cur-line':''}}"></view>
+			{{itemName}}
+		</view>
+		<view class="item-add">
+			<image lazy-load="true" src="{{servenImg + 'goods_product_add.png'}}" class="add-product"></image>
+		</view>
+		<view class="item-tab"></view>
+	</scroll-view>
+
+	<!-- 右侧-商品列表-商品 -->
+	<scroll-view scroll-y="true" scroll-with-animation="true" class="right-list">
+		<view class="item-product not-project" wx:for="{{productList}}" wx:key="index">
+			<view class="product-list">
+				<view class="item" wx:for="{{item.product}}" wx:key="id">
+					<view class="pic"></view>
+					<view class="detail">
+						<view class="product-name">
+							<text>{{item.productName}}</text>
+							<image lazy-load="true" src="{{servenImg + 'icon_tag.png'}}" class="product-icon"></image>
+							<image lazy-load="true" src="{{servenImg + 'icon_hot.png'}}" class="product-icon"></image>
+							<image lazy-load="true" src="{{servenImg + 'icon_good.png'}}" class="product-icon"></image>
+						</view>
+						<view class="product-size-name">{{item.productSizeName}}</view>
+						<view class="product-type-list">
+							<view class="item" wx:for="{{item.productType}}" wx:key="id">{{item.name}}</view>
+						</view>
+						<view class="product-money">
+							<view class="money-num"><text class="money-rmb">¥</text>{{item.productMoney}}</view>
+							<view class="switch-box">
+								<text class="switch-text-put">上架</text>
+								<switch color="#3390FF"></switch>
+
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+
+
+
+
+
+
+	</scroll-view>
+</view>
