@@ -1,5 +1,5 @@
 <!--pages/addGoods/addGoods.wxml-->
-<view class="add-goods">
+<view class="add-goods bg">
 	<!--轮播图 -->
 	<swiper autoplay="true" interval="3000" duration="500" circular="true" class="product-pic">
 		<block>
@@ -25,13 +25,80 @@
 	<!-- 商品规格 -->
 	<view class="goods-specs">
 		<view class="title">
-			<text></text>商品规格
-		</view>
-		<view class="specs-name">
-			<view class="title"><text class="xin">*</text>规格名:</text>
-			<input class="weui-input goods-input" maxlength="20" placeholder="请填写规格" bindinput="goodsNameHandle" />
-			<text class="goods-text-num">{{goodsNameLengthNum}}/20</text>
+			<text class="line"></text>商品规格
 		</view>
 
+		<!-- 规格名 -->
+		<view class="specs-name">
+			<view class="specs-title"><text class="xin">*</text>规格名:</view>
+			<input class="weui-input specs-input" maxlength="20" placeholder="请填写规格" bindinput="specsNameHandlef" />
+			<text class="specs-text-num">{{specsNameLengthNum}}/20</text>
+		</view>
+
+		<!-- 规格值 -->
+		<view class="specs-value">
+			<view class="specs-title"><text class="xin">*</text>规格值:</view>
+			<view class="specs-child-list">
+				<view class="child-item">
+					<input class="weui-input specs-input" placeholder="请填写子规格值" maxlength="20"></input>
+					<text class="specs-child-text-num">0/20</text>
+					<view class="icon-add">
+						<image class="img" src="{{servenImg + 'icon_add.png'}}"></image>
+					</view>
+				</view>
+				<view class="child-item">
+					<input class="weui-input specs-input" placeholder="请填写子规格值" maxlength="20"></input>
+					<text class="specs-child-text-num">0/20</text>
+					<view class="icon-add">
+						<image class="img" src="{{servenImg + 'icon_blue_clear.png'}}"></image>
+					</view>
+				</view>
+				<view class="child-item add-apece-btn"><text class="plus">+</text>添加规格</view>
+			</view>
+		</view>
 	</view>
+
+	<!-- 新增规格 -->
+	<view class="goods-specs">
+		<!-- 规格名 -->
+		<view class="specs-name">
+			<view class="specs-title"><text class="xin">*</text>规格名:</view>
+			<input class="weui-input specs-input" maxlength="20" placeholder="请填写规格" bindinput="specsNameHandlef" />
+			<text class="specs-text-num">{{specsNameLengthNum}}/20</text>
+		</view>
+
+		<!-- 规格值 -->
+		<view class="specs-value">
+			<view class="specs-title"><text class="xin">*</text>规格值:</view>
+			<view class="specs-child-list">
+				<view class="child-item">
+					<input class="weui-input specs-input" placeholder="请填写子规格值" maxlength="20"></input>
+					<text class="specs-child-text-num">0/20</text>
+					<view class="icon-add">
+						<image class="img" src="{{servenImg + 'icon_add.png'}}"></image>
+					</view>
+				</view>
+				<view class="child-item">
+					<input class="weui-input specs-input" placeholder="请填写子规格值" maxlength="20"></input>
+					<text class="specs-child-text-num">0/20</text>
+					<view class="icon-add">
+						<image class="img" src="{{servenImg + 'icon_blue_clear.png'}}"></image>
+					</view>
+				</view>
+				<view class="child-item add-apece-btn del-spece">删除规格</view>
+			</view>
+		</view>
+	</view>
+
+  <view class="goods-specs-table">
+    <view class="tr">
+      <view class="td">规格名</view>
+      <view class="td">规格值</view>
+      <view class="td">单价（元）</view>
+      <view class="td">图片</view>
+    </view>
+     <view class="tr">
+    
+    </view>
+  </view>
 </view>
