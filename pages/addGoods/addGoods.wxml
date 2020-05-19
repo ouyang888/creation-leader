@@ -90,15 +90,38 @@
 		</view>
 	</view>
 
-  <view class="goods-specs-table">
-    <view class="tr">
-      <view class="td">规格名</view>
-      <view class="td">规格值</view>
-      <view class="td">单价（元）</view>
-      <view class="td">图片</view>
-    </view>
-     <view class="tr">
-    
-    </view>
-  </view>
+	<!-- 规格列表 -->
+	<view class="goods-specs-table">
+		<view class="table">
+			<view class="tr">
+				<view class="td">规格名</view>
+				<view class="td">规格值</view>
+				<view class="td">单价（元）</view>
+				<view class="td">图片</view>
+			</view>
+			<view class="tr">
+				<view class="td">尺寸</view>
+				<view class="td">24</view>
+				<view class="td">489.00</view>
+				<view class="td">
+					<view class="pic">
+						<image class="img" src="{{servenImg + 'add_type.png'}}"></image>
+					</view>
+				</view>
+			</view>
+			<view class="tr">
+				<view class="td">尺寸</view>
+				<view class="td">24</view>
+				<view class="td">489.00</view>
+				<view class="td">
+					<view class="pic">
+						<image class="img" src="{{servenImg + 'shopImg.png'}}"></image>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<!-- 保存 -->
+	<button class="save-btn">保存</button>
 </view>
