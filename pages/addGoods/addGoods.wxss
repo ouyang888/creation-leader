@@ -1,0 +1,30 @@
+.add-goods .product-pic .item {
+  height: 500rpx;
+}
+
+.add-goods .goods-name{
+  height: 106rpx;
+  background: #fff;
+  box-shadow:0px 7rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+  border-radius:10rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+
+.add-goods .goods-name .title{
+  color: #666666;
+  min-width: 120rpx;
+}
+
+.add-goods .goods-name .goods-input{
+  width: 100%;
+  margin-left: 49rpx;
+  margin-top: 3rpx;
+}
+
+.add-goods .goods-name .goods-text-num{
+  color: #999999;
+}

@@ -1,0 +1,37 @@
+<!--pages/addGoods/addGoods.wxml-->
+<view class="add-goods">
+	<!--轮播图 -->
+	<swiper autoplay="true" interval="3000" duration="500" circular="true" class="product-pic">
+		<block>
+			<swiper-item>
+				<view class="item" style="background:red;">1</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:blue;">2</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:green;">3</view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<!-- 商品名称 -->
+	<view class="goods-name">
+		<text class="title">商品名称:</text>
+		<input class="weui-input goods-input" maxlength="15" placeholder="请输入商品名称" bindinput="goodsNameHandle" />
+		<text class="goods-text-num">{{goodsNameLengthNum}}/15</text>
+	</view>
+
+	<!-- 商品规格 -->
+	<view class="goods-specs">
+		<view class="title">
+			<text></text>商品规格
+		</view>
+		<view class="specs-name">
+			<view class="title"><text class="xin">*</text>规格名:</text>
+			<input class="weui-input goods-input" maxlength="20" placeholder="请填写规格" bindinput="goodsNameHandle" />
+			<text class="goods-text-num">{{goodsNameLengthNum}}/20</text>
+		</view>
+
+	</view>
+</view>
