@@ -1,0 +1,44 @@
+<view class="add-goods-two bg">
+	<!--轮播图 -->
+	<swiper autoplay="true" interval="3000" duration="500" circular="true" class="product-pic">
+		<block>
+			<swiper-item>
+				<view class="item" style="background:red;">1</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:blue;">2</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:green;">3</view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<!-- 规格类型 -->
+	<view class="specs-type-form">
+		<view class="specs-item">
+			<text class="xin">*</text>
+			<text class="text">规格类型：</text>
+			<view class="check-radio">
+				<label class="radio first">
+					<radio />
+					<text class="radio-name">无</text>
+				</label>
+				<label class="radio second">
+					<radio />
+					<text class="radio-name">多规格商品</text>
+				</label>
+
+			</view>
+		</view>
+		<view class="specs-item">
+			<text class="xin">*</text>
+			<text class="text">商品名称：</text>
+      <input  placeholder="请输入商品名称"></input>
+      <text>0/15</text>
+		</view>
+		<view class="specs-item">
+			123
+		</view>
+	</view>
+</view>

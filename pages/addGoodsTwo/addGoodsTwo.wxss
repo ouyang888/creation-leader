@@ -1,0 +1,72 @@
+.add-goods-two .product-pic .item {
+  height: 500rpx;
+}
+
+.add-goods-two .specs-type-form{
+  background: #fff;
+  box-shadow:0px 7rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+  border-radius:10rpx;
+  padding: 0 30rpx;
+}
+
+.add-goods-two .specs-type-form .specs-item{
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  border-bottom: 2rpx solid #E4E9F0;
+}
+.add-goods-two .specs-type-form .specs-item .xin{
+  font-size: 38rpx;
+  color: #FF2522;
+  margin-right: 6rpx;
+  padding-top: 15rpx;
+}
+.add-goods-two .specs-type-form .specs-item .text{
+  font-size: 28rpx;
+  color: #666666;
+}
+
+.add-goods-two .specs-type-form .specs-item .check-radio{
+  padding-top: 4rpx;
+  font-size: 28rpx;
+  color: #2A2A2A;
+}
+.add-goods-two .specs-type-form .specs-item .check-radio .first{
+  margin-left:49rpx
+}
+
+.add-goods-two .specs-type-form .specs-item .check-radio .second{
+  margin-left:60rpx
+}
+
+.add-goods-two .specs-type-form .specs-item .check-radio .radio-name{
+  vertical-align: middle;
+}
+
+
+/* 单选按钮样式*/
+.add-goods-two .specs-type-form .specs-item .check-radio radio .wx-radio-input {
+  width: 30rpx;
+  height: 30rpx;
+  border: 3rpx solid #B5B5B5;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none !important;
+}
+
+/*单选按钮选中后内部样式*/
+.add-goods-two .specs-type-form .specs-item .check-radio radio .wx-radio-input.wx-radio-input-checked {
+  border: 3rpx solid #3390FF!important;
+}
+
+.add-goods-two .specs-type-form .specs-item .check-radio radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 75%;
+  height: 75%;
+  background: #3390FF;
+  border-radius: 100%;
+  content: '';
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

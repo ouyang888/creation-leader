@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/addGoodsTwo/addGoodsTwo",
     "pages/addGoods/addGoods", 
     "pages/goodsMassage/goodsMassage",
     "pages/houseEditType/houseEditType",
