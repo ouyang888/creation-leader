@@ -41,7 +41,7 @@
 			<text class="xin">*</text>
 			<text class="text">商品单价：</text>
       <input class="specs-input" maxlength="15" placeholder="请输入商品价格"></input>
-      <text class="spece-input-length">0/15</text>
+      <view class="spece-unit">元/m</view>
 		</view>
 	</view>
 </view>
