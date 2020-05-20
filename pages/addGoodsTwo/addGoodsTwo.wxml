@@ -34,11 +34,14 @@
 		<view class="specs-item">
 			<text class="xin">*</text>
 			<text class="text">商品名称：</text>
-      <input  placeholder="请输入商品名称"></input>
-      <text>0/15</text>
+      <input class="specs-input" maxlength="15" placeholder="请输入商品名称"></input>
+      <text class="spece-input-length">0/15</text>
 		</view>
 		<view class="specs-item">
-			123
+			<text class="xin">*</text>
+			<text class="text">商品单价：</text>
+      <input class="specs-input" maxlength="15" placeholder="请输入商品价格"></input>
+      <text class="spece-input-length">0/15</text>
 		</view>
 	</view>
 </view>

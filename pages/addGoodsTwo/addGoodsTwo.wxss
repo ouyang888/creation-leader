@@ -22,8 +22,18 @@
   padding-top: 15rpx;
 }
 .add-goods-two .specs-type-form .specs-item .text{
+  white-space: nowrap;
   font-size: 28rpx;
   color: #666666;
+}
+
+.add-goods-two .specs-type-form .specs-item .spece-input-length{
+  color: #999999;
+  font-size: 28rpx;
+}
+
+.add-goods-two .specs-type-form .specs-item:last-child{
+  border-bottom: 0;
 }
 
 .add-goods-two .specs-type-form .specs-item .check-radio{
@@ -41,6 +51,14 @@
 
 .add-goods-two .specs-type-form .specs-item .check-radio .radio-name{
   vertical-align: middle;
+}
+
+.add-goods-two .specs-type-form .specs-item .specs-input{
+  width: 100%;
+  font-size: 28rpx;
+  color: #999999;
+  margin-left: 49rpx;
+  margin-top: 8rpx;
 }
 
 
