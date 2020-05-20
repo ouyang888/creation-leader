@@ -10,7 +10,10 @@ Page({
     //商品名称长度
     goodsNameLengthNum: "0",
     //规格名称长度
-    specsNameLengthNum:"0"
+    specsNameLengthNum:"0",
+
+    
+    
   },
 
   /**
@@ -34,6 +37,12 @@ Page({
     this.setData({
       specsNameLengthNum:e.detail.value.length
     })
-  }
+  },
+
+  bindPickerChange: function(e) {
+    this.setData({
+      index: e.detail.value
+    })
+  },
 
 })
