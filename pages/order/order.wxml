@@ -1,10 +1,20 @@
 <view class="order bg">
+
+<!-- 头部--搜索与导航栏 -->
 	<view class="top">
 		<view class="search">
 			<image lazy-load="true" src="{{servenImg + 'search.png'}}" class="search-icon"></image>
+			<input class="search-input" placeholder="搜索我的订单"></input>
 		</view>
-		<view class="tab-bar"></view>
+		<view class="tab-bar">
+			<view class="item ">报价</view>
+			<view class="item ">服务中(36)</view>
+			<view class="item ">待结算</view>
+			<view class="item cur">历史单</view>
+		</view>
 	</view>
+
+	<!-- 列表 -->
 	<view class="order-list">
 		123
 	</view>
