@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/order/order",
+    "pages/manage/manage",
+    "pages/index/index",
     "pages/addGoodsTwo/addGoodsTwo",
-    "pages/addGoods/addGoods", 
+    "pages/addGoods/addGoods",
     "pages/goodsMassage/goodsMassage",
     "pages/houseEditType/houseEditType",
     "pages/houseList/houseList",
     "pages/houseType/houseType",
-    "pages/index/index",
     "pages/projectRelease/shopList/shopList",
     "pages/projectRelease/projectRelease",
     "pages/login/login",
@@ -19,6 +21,28 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+
+
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "icon/icon_order.png",
+        "selectedIconPath": "icon/_icon_order.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "管理",
+        "iconPath": "icon/icon_manage.png",
+        "selectedIconPath": "icon/_icon_manage.png"
+      }
+    ],
+    "color": "#2A2A2A",
+    "selectedColor": "#3390FF",
+    "backgroundColor": "#FFFFFF",
+    "position": "bottom"
+
   },
 
 

@@ -34,14 +34,14 @@
 		<view class="specs-item">
 			<text class="xin">*</text>
 			<text class="text">商品名称：</text>
-			<input class="specs-input" maxlength="15" placeholder="请输入商品名称"></input>
-			<text class="spece-input-length">0/15</text>
+      <input class="specs-input" maxlength="15" placeholder="请输入商品名称"></input>
+      <text class="spece-input-length">0/15</text>
 		</view>
 		<view class="specs-item">
 			<text class="xin">*</text>
 			<text class="text">商品单价：</text>
-			<input class="specs-input" maxlength="15" placeholder="请输入商品价格"></input>
-			<picker class="select-list" bindchange="bindPickerChange" value="{{index}}" range="{{selectList}}">
+      <input class="specs-input" maxlength="15" placeholder="请输入商品价格"></input>
+     	<picker class="select-list" bindchange="bindPickerChange" value="{{index}}" range="{{selectList}}">
 				<view class="picker">
 					{{selectList[index]}} 
 					<image class="icon-select-arrow" src="{{servenImg + 'icon_arrow_balck.png'}}"></image>
@@ -49,12 +49,9 @@
 			</picker>
 		</view>
 	</view>
-
 <!-- 商品说明 -->
 <view class="product-description">
 	<textarea class="product-textarea" bindblur="bindTextAreaBlur" auto-height placeholder="请输入商品说明~" />
 
 	<button class="save-btn">保存</button>
-</view>
-
-</view>
+</view></view>

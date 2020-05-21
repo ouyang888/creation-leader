@@ -1,0 +1,11 @@
+<view class="order bg">
+	<view class="top">
+		<view class="search">
+			<image lazy-load="true" src="{{servenImg + 'search.png'}}" class="search-icon"></image>
+		</view>
+		<view class="tab-bar"></view>
+	</view>
+	<view class="order-list">
+		123
+	</view>
+</view>

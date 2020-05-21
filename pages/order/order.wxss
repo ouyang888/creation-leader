@@ -1,0 +1,22 @@
+.order .top {
+  background: #fff;
+  height: 225rpx;
+  border-radius: 0px 0px 10rpx 10rpx;
+  box-shadow: 0px 7rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.order .top .search {
+  width:690rpx;
+  height:64rpx;
+  background: #F4F6F6;
+  border-radius: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order .top .search search-icon{
+  width: 27rpx;
+  height: 27rpx;
+}
