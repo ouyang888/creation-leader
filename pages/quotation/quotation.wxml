@@ -1,0 +1,30 @@
+<view class="quotation bg">
+	<view class="container">
+		<view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="index">
+			<view class="content">
+				<view class="item">
+					<view class="left">
+						<view class="pic">
+							<image class="img" src="{{servenImg + 'shopImg.png'}}" mode="scaleToFill"></image>
+						</view>
+						<view class="left-text">
+							<view class="name">
+								百变房铝合金窗
+							</view>
+							<view class="type-name">凤铝1.4厚铝合金窗</view>
+							<view class="num-type">
+								<view class="num">数量：1</view>
+								<view class="type-list">
+									<view class="type-item">加厚型</view>
+									<view class="type-item">铝合金</view>
+								</view>
+							</view>
+						</view>
+					</view>
+					<view class="right">234</view>
+				</view>
+			</view>
+			<view class="del" catchtap="del" data-index="{{index}}">删除</view>
+		</view>
+	</view>
+</view>

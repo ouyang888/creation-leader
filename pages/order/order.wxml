@@ -1,6 +1,6 @@
 <view class="order bg">
 
-<!-- 头部--搜索与导航栏 -->
+	<!-- 头部--搜索与导航栏 -->
 	<view class="top">
 		<view class="search">
 			<image lazy-load="true" src="{{servenImg + 'search.png'}}" class="search-icon"></image>
@@ -15,7 +15,106 @@
 	</view>
 
 	<!-- 列表 -->
-	<view class="order-list">
-		123
-	</view>
+	<scroll-view class="list" scroll-y="true">
+		<view class="item">
+			<view class="room">
+				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
+				<view class="state cur">服务中</view>
+			</view>
+			<view class="leader">
+			  <text class="leader-name">团长：李强</text>
+				<image lazy-load="true" src="{{servenImg + 'icon_phone2.png'}}" class="icon-phone"></image>
+				<text>13434124520</text>
+			</view>
+		</view>
+		<view class="item">
+			<view class="room">
+				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
+				<view class="state cur">服务中</view>
+			</view>
+			<view class="leader">
+			  <text class="leader-name">团长：李强</text>
+				<image lazy-load="true" src="{{servenImg + 'icon_phone2.png'}}" class="icon-phone"></image>
+				<text>13434124520</text>
+			</view>
+		</view>
+		<view class="item">
+			<view class="room">
+				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
+				<view class="state cur">服务中</view>
+			</view>
+			<view class="leader">
+			  <text class="leader-name">团长：李强</text>
+				<image lazy-load="true" src="{{servenImg + 'icon_phone2.png'}}" class="icon-phone"></image>
+				<text>13434124520</text>
+			</view>
+		</view>
+		<view class="item">
+			<view class="room">
+				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
+				<view class="state cur">服务中</view>
+			</view>
+			<view class="leader">
+			  <text class="leader-name">团长：李强</text>
+				<image lazy-load="true" src="{{servenImg + 'icon_phone2.png'}}" class="icon-phone"></image>
+				<text>13434124520</text>
+			</view>
+		</view>
+		<view class="item">
+			<view class="room">
+				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
+				<view class="state cur">服务中</view>
+			</view>
+			<view class="leader">
+			  <text class="leader-name">团长：李强</text>
+				<image lazy-load="true" src="{{servenImg + 'icon_phone2.png'}}" class="icon-phone"></image>
+				<text>13434124520</text>
+			</view>
+		</view>
+		<view class="item">
+			<view class="room">
+				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
+				<view class="state cur">服务中</view>
+			</view>
+			<view class="leader">
+			  <text class="leader-name">团长：李强</text>
+				<image lazy-load="true" src="{{servenImg + 'icon_phone2.png'}}" class="icon-phone"></image>
+				<text>13434124520</text>
+			</view>
+		</view>
+		<view class="item">
+			<view class="room">
+				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
+				<view class="state cur">服务中</view>
+			</view>
+			<view class="leader">
+			  <text class="leader-name">团长：李强</text>
+				<image lazy-load="true" src="{{servenImg + 'icon_phone2.png'}}" class="icon-phone"></image>
+				<text>13434124520</text>
+			</view>
+		</view>
+		<view class="item">
+			<view class="room">
+				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
+				<view class="state cur">服务中</view>
+			</view>
+			<view class="leader">
+			  <text class="leader-name">团长：李强</text>
+				<image lazy-load="true" src="{{servenImg + 'icon_phone2.png'}}" class="icon-phone"></image>
+				<text>13434124520</text>
+			</view>
+		</view>
+		<view class="item">
+			<view class="room">
+				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
+				<view class="state cur">服务中</view>
+			</view>
+			<view class="leader">
+			  <text class="leader-name">团长：李强</text>
+				<image lazy-load="true" src="{{servenImg + 'icon_phone2.png'}}" class="icon-phone"></image>
+				<text>13434124520</text>
+			</view>
+		</view>
+		<view style="height:240rpx"></view>
+	</scroll-view>
 </view>

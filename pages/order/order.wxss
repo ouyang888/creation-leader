@@ -1,3 +1,6 @@
+.order{
+  overflow: hidden;
+}
 .order .top {
   background: #fff;
   height: 225rpx;
@@ -40,15 +43,67 @@
   color: rgba(42, 42, 42, 1);
   font-family: Source Han Sans CN;
   font-weight: 400;
-  justify-content: space-between;
   border-top: 2rpx solid #E4E9F0;
 }
 
-.order .top .tab-bar .item{
- text-align: center;
+.order .top .tab-bar .item {
+  text-align: center;
   width: 25%;
 }
 
-.order .top .tab-bar .cur{
-  border-bottom:6rpx solid #3390FF;
+.order .top .tab-bar .cur {
+  border-bottom: 6rpx solid #3390FF;
+}
+
+.order .list {
+  box-sizing: border-box;
+}
+
+.order .list{
+  height: 100vh;
+}
+
+.order .list .item {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 7rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10rpx;
+  margin: 20rpx 30rpx 0;
+  padding: 30rpx;
+}
+
+.order .list .item .room {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order .list .item .room .name {
+  font-size: 32rpx;
+  color: #2A2A2A;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+}
+
+.order .list .item .room .state {
+  color: #999999;
+  font-size: 28rpx;
+}
+
+.order .list .item .leader {
+  margin-top: 16rpx;
+  color: #999999;
+  font-size: 24rpx;
+}
+
+.order .list .item .room .state.cur {
+  color: #3390FF;
+}
+
+.order .list .item .leader .icon-phone {
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 30rpx;
+  margin-right: 10rpx;
+  margin-top: -8rpx;
+  vertical-align: middle;
 }
