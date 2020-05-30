@@ -1,23 +1,29 @@
 <!--index.wxml-->
-<view class="home">
+<view class="home" catchtouchmove="noneEnoughPeople">
 	<!-- 左侧栏 -->
-	<scroll-view scroll-y="true" scroll-with-animation="true" class="left-tab">
-		<view class="{{leftTabActived===index? 'item-tab cur':'item-tab'}}" bindtap="handleTab" data-index="{{index}}" wx:for="{{tabList}}" wx:for-index="index" wx:for-item="itemName" wx:key="index">
-			<view class="{{leftTabActived===index? 'cur-line':''}}"></view>
-			{{itemName}}
-		</view>
-		<view class="item-add">
-			<image lazy-load="true" src="{{servenImg + 'goods_product_add.png'}}" class="add-product"></image>
-		</view>
-		<view class="item-tab"></view>
-	</scroll-view>
+	<view class="left-bar">
+		<scroll-view scroll-y="true" scroll-with-animation="true" class="left-tab">
+			<view class="{{leftTabActived===index? 'item-tab cur':'item-tab'}}" bindtap="handleTab" data-index="{{index}}" wx:for="{{tabList}}" wx:for-index="index" wx:for-item="itemName" wx:key="index">
+				<view class="{{leftTabActived===index? 'cur-line':''}}"></view>
+				{{itemName}}
+			</view>
+
+	<!--		增加-->
+			<view class="item-add" bindtap="addItemHandle">
+				<image lazy-load="true" src="{{servenImg + 'goods_product_add.png'}}" class="add-product"></image>
+			</view>
+
+			<view class="item-tab"></view>
+			<view class="item-tab"></view>
+		</scroll-view>
+	</view>
 
 	<!-- 右侧-商品列表-商品 -->
 	<scroll-view scroll-y="true" scroll-with-animation="true" class="right-list">
 		<view class="item-product not-project" wx:for="{{productList}}" wx:key="index">
 			<view class="product-list">
 				<view class="item" wx:for="{{item.product}}" wx:key="id">
-					<view class="pic"></view>
+					<view class="pic" bindtap="goProductDetail"></view>
 					<view class="detail">
 						<view class="product-name">
 							<text>{{item.productName}}</text>
@@ -41,12 +47,29 @@
 				</view>
 			</view>
 		</view>
-
-
-
-
-
-
-
 	</scroll-view>
+
+
+<!--	添加商品按钮-->
+	<view class="add-goods-btn" bindtap="goAddGoodsManage">
+		<button class="btn">添加商品</button>
+	</view>
+
+
+	<!--添加分类-->
+	<view class="add-item-modal" wx:if="{{isShowAddModal}}">
+		<view class="content">
+			<view class="title">添加分类</view>
+			<view class="body">
+				<input auto-focus class="weui-input item-input"/>
+			</view>
+			<view class="foot">
+				<button class="item-btn" bindtap="blackHandle">取消</button>
+				<button class="item-btn cur" bindtap="setAddItemHandle">确定</button>
+			</view>
+		</view>
+	</view>
+
+	<!--遮罩-黑色背景-->
+	<view class="black-bg" bindtap="blackHandle" wx:if="{{isShowBlackBg}}"></view>
 </view>

@@ -1,0 +1,67 @@
+<view class="add-house-manage bg">
+	<!-- 轮播图 -->
+	<swiper autoplay="true" interval="3000" duration="500" circular="true" class="product-pic">
+		<block>
+			<swiper-item>
+				<view class="item" style="background:red;">1</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:blue;">2</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="item" style="background:green;">3</view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<!-- 用户名、面积输入 -->
+	<view class="type-form">
+		<view class="item">
+			<text class="name">户型名：</text>
+			<input class="weui-input item-input" placeholder="请输入户型名"/>
+		</view>
+		<view class="item">
+			<text class="name">面积：</text>
+			<input class="weui-input item-input" type="number" placeholder="请输入面积"/>
+			<text>㎡</text>
+		</view>
+	</view>
+
+	<!-- 此户型关联房号 -->
+	<view class="related-room">
+		<text class="line"></text>
+		<text class="name">此户型关联房号</text>
+	</view>
+
+  	<!-- 小区座号 -->
+	<view class="select-room-bar">
+		<view class="title">小区座号</view>
+		<view class="list">
+			<view class="item">1座</view>
+			<view class="item cur">1座</view>
+			<view class="item">1座</view>
+			<view class="item">1座</view>
+			<view class="item">1座</view>
+			<view class="item">1座</view>
+		</view>
+	</view>
+
+  <!-- 每层房号 -->
+	<view class="select-room-bar">
+		<view class="title">每层房号</view>
+		<view class="list">
+			<view class="item">1座</view>
+			<view class="item cur">1座</view>
+			<view class="item">1座</view>
+			<view class="item">1座</view>
+			<view class="item">1座</view>
+			<view class="item">1座</view>
+		</view>
+	</view>
+
+<!--	保存-->
+	<view class="save-bottom">
+		<button class="btn">保存</button>
+	</view>
+
+</view>

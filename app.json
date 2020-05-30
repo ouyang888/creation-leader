@@ -1,26 +1,36 @@
 {
   "pages": [
-    "pages/quotation/quotation",
-    "pages/order/order",
     "pages/manage/manage",
-    "pages/index/index",
-    "pages/addGoodsTwo/addGoodsTwo",
-    "pages/addGoods/addGoods",
     "pages/goodsMassage/goodsMassage",
-    "pages/houseEditType/houseEditType",
+    "pages/productDetail/productDetail", 
+    "pages/addGoodsTwo/addGoodsTwo",
+    "pages/buildManage/buildManage",
+    "pages/houseManage/houseManage",
+    "pages/addHouseMange/addHouseMange",
+    
+
+
+
+
+
+
+
     "pages/houseList/houseList",
-    "pages/houseType/houseType",
-    "pages/projectRelease/shopList/shopList",
-    "pages/projectRelease/projectRelease",
-    "pages/login/login",
-    "pages/register/authentication/authentication",
+    "pages/addGoods/addGoods",
+    "pages/order/order",
     "pages/register/nextRegister/nextRegister",
+    "pages/projectRelease/shopList/shopList",
+    "pages/houseType/houseType",
+    "pages/houseEditType/houseEditType",
+    "pages/quotation/quotation",
+    "pages/index/index",
+    "pages/login/login",
     "pages/register/register"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "善创",
     "navigationBarTextStyle": "black"
   },
 

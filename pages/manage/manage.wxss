@@ -1,1 +1,111 @@
-/* pages/manage/manage.wxss */
+.manage .user-bar {
+    height: 360rpx;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 30rpx;
+}
+
+.manage .user-bar .pic {
+    width: 146rpx;
+    height: 146rpx;
+    border-radius: 50%;
+    border: 3rpx solid #fff;
+    overflow: hidden;
+    margin-right:36rpx;
+}
+
+.manage .user-bar .pic .img {
+    width: 100%;
+    height: 100%;
+}
+
+.manage .user-bar .detail .user-datail {
+    display: flex;
+    align-items: center;
+}
+
+.manage .user-bar .detail .address {
+    font-size: 40rpx;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 19rpx;
+}
+
+.manage .user-bar .detail .icon-phone{
+    width:26rpx;
+    height:26rpx;
+    margin-left: 30rpx;
+    margin-right: 8rpx;
+}
+
+.manage .user-bar .detail .user-datail {
+    font-size: 26rpx;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(196, 220, 254, 1);
+}
+
+.manage .img-nav-bar{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30rpx 30rpx;
+    justify-content: space-around;
+    border-radius: 10rpx;
+    box-shadow: 0px 7rpx 27rpx 0rpx rgba(0, 0, 0, 0.05);
+}
+.manage .img-nav-bar .nav-img{
+    width:330rpx;
+    height:130rpx;
+    margin-top: 30rpx;
+    margin-right: 30rpx;
+}
+
+.manage .img-nav-bar .nav-img:nth-child(even){
+    margin-right: 0;
+}
+
+.manage .set-up-list {
+    margin-top: 20rpx;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 7rpx 27rpx 0 rgba(0, 0, 0, 0.05);
+    border-radius: 10rpx;
+    padding: 35rpx;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+.manage .set-up-list .set-item{
+    border-bottom: 2rpx solid #E4E9F0;
+    font-size:32rpx;
+    font-family:Source Han Sans CN;
+    font-weight:400;
+    color:rgba(42,42,42,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34rpx 0;
+}
+
+.manage .set-up-list .set-item:last-child{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.manage .set-up-list .set-item .img{
+    width:14rpx;
+    height:24rpx;
+}
+
+.manage .title-text{
+    font-size:24rpx;
+    font-family:Source Han Sans CN;
+    font-weight:400;
+    color:rgba(204,204,204,1);
+    text-align: center;
+    margin: 30rpx 0;
+}
+
+

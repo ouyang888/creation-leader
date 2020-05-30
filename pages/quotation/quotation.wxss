@@ -1,5 +1,6 @@
 /* pages/quotation/quotation.wxss */
 .container {
+  height: auto;
   padding: 0rpx 20rpx;
 }
 
@@ -19,7 +20,6 @@
 
 .content {
   width: 100%;
-  line-height: 22px;
   margin-right: 0;
   box-sizing: border-box;
   -webkit-transition: all 0.4s;
@@ -31,7 +31,7 @@
 
 .del {
   background-color: orangered;
-  width: 90px;
+  width: 89px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,4 +80,86 @@
   color: #2A2A2A;
   font-family: Source Han Sans CN;
   font-weight: 500;
+
+}
+
+.quotation .container .content .item .left .left-text .name .img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: -3rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.quotation .container .content .item .left .left-text .type-name {
+  font-size: 22rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  margin-top: 10rpx;
+}
+
+.quotation .container .content .item .left .left-text .num {
+  font-size: 18rpx;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  margin-top: 10rpx;
+}
+
+.quotation .container .content .item .right {
+  color: #FF2522;
+  font-size: 36rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+}
+
+.quotation .container .content .item .right .rmb {
+  font-size: 24rpx;
+  margin-right: 5rpx;
+}
+
+
+.quotation .money-box {
+  background: #fff;
+  box-shadow: 0px 7rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10rpx;
+  margin: 20rpx 20rpx 0;
+}
+
+.quotation .money-box .money-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #E4E9F0;
+  height: 100rpx;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+
+.quotation .money-box .money-item .title {
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(42, 42, 42, 1);
+}
+
+.quotation .money-box .money-item .money {
+  font-size: 36rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+}
+
+.quotation .money-box .money-item .money.red{
+  color: rgba(255, 37, 34, 1);
+}
+
+.quotation .money-box .money-item .money .rmb{
+  font-size: 24rpx;
+  margin-right: 3rpx;
+}
+
+.quotation .btn-group{
+  background:#fff;
+  margin-top: 70rpx;
+  margin: 0 20rpx;
 }

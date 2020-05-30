@@ -1,2 +1,56 @@
-<!--pages/manage/manage.wxml-->
-<text>pages/manage/manage.wxml</text>
+<view class="manage bg">
+    <!--  用户介绍-->
+    <view class="user-bar" style="background-image:url({{servenImg + 'myBg.png'}})">
+        <view class="pic">
+            <image class="img" src="{{servenImg + 'huxing.png'}}"/>
+        </view>
+        <view class="detail">
+            <view class="address">
+                碧桂园凤凰湾听涛宛小区
+            </view>
+            <view class="user-datail">
+                <text>团长：李强</text>
+                <image class="icon-phone" src="{{servenImg + 'icon_phone3.png'}}"/>
+                <text>13434124520</text>
+            </view>
+        </view>
+    </view>
+
+    <!--  四个图片导航-->
+    <view class="img-nav-bar">
+
+        <image bindtap="goBuildManage" class="nav-img" src="../../images/loupan.png"/>
+
+        <image bindtap="goHouserManage" class="nav-img" src="../../images/huxingguanli.png"/>
+
+        <image bindtap="goGoodsMassage" class="nav-img" src="../../images/shangpinguanli.png"/>
+
+        <image class="nav-img" src="../../images/xiangmfabu.png"/>
+
+    </view>
+
+    <!--    设置列表-->
+    <view class="set-up-list">
+        <view class="set-item">
+            反馈意见
+            <image class="img" src="{{servenImg + 'icon_arrow_right.png'}}"/>
+        </view>
+        <view class="set-item">
+            账户安全
+            <image class="img" src="{{servenImg + 'icon_arrow_right.png'}}"/>
+        </view>
+        <view class="set-item">
+            通用设置
+            <image class="img" src="{{servenImg + 'icon_arrow_right.png'}}"/>
+        </view>
+        <view class="set-item">
+            退出当前账户
+            <image class="img" src="{{servenImg + 'icon_arrow_right.png'}}"/>
+        </view>
+    </view>
+
+<!--    做精品工程    让客户安心放心-->
+    <view class="title-text">
+        做精品工程　让客户安心放心
+    </view>
+</view>

@@ -53,5 +53,5 @@
 <view class="product-description">
 	<textarea class="product-textarea" bindblur="bindTextAreaBlur" auto-height placeholder="请输入商品说明~" />
 
-	<button class="save-btn">保存</button>
+	<button class="save-btn" bindtap="setAddItem">保存</button>
 </view></view>

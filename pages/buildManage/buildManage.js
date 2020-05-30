@@ -1,4 +1,4 @@
-// pages/manage/manage.js
+// pages/buildManage/buildManage.js
 const app = getApp()
 Page({
 
@@ -7,7 +7,6 @@ Page({
    */
   data: {
     servenImg: '',
-
   },
 
   /**
@@ -19,28 +18,11 @@ Page({
     })
   },
 
-  // 跳转到用户管理
-  goHouserManage(){
+  saveHandle() {
     wx.navigateTo({
       url: '../houseManage/houseManage',
     })
   },
-
-  // 跳转到楼盘信息
-  goBuildManage(){
-    wx.navigateTo({
-      url: '../buildManage/buildManage',
-    })
-  },
-
-  //跳转到商品管理
-  goGoodsMassage(){
-    wx.navigateTo({
-      url: '../goodsMassage/goodsMassage',
-    })
-  },
-  
-  
 
   /**
    * 生命周期函数--监听页面初次渲染完成

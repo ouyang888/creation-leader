@@ -1,4 +1,5 @@
 <view class="quotation bg">
+	<!-- 商品列表 -->
 	<view class="container">
 		<view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="index">
 			<view class="content">
@@ -9,22 +10,47 @@
 						</view>
 						<view class="left-text">
 							<view class="name">
-								百变房铝合金窗
+								{{item.name}}
+								<image class="img" src="{{servenImg + 'icon_hot.png'}}" mode="scaleToFill"></image>
+								<image class="img" src="{{servenImg + 'icon_good.png'}}" mode="scaleToFill"></image>
+								<image class="img" src="{{servenImg + 'icon_tag.png'}}" mode="scaleToFill"></image>
 							</view>
-							<view class="type-name">凤铝1.4厚铝合金窗</view>
-							<view class="num-type">
-								<view class="num">数量：1</view>
-								<view class="type-list">
-									<view class="type-item">加厚型</view>
-									<view class="type-item">铝合金</view>
-								</view>
+							<view class="type-name">
+								{{item.secondName}}
 							</view>
+
+							<view class="num">数量：{{item.num}}</view>
+
 						</view>
 					</view>
-					<view class="right">234</view>
+					<view class="right">
+						<text class="rmb">¥</text>{{item.money}}
+					</view>
 				</view>
 			</view>
 			<view class="del" catchtap="del" data-index="{{index}}">删除</view>
 		</view>
+	</view>
+
+	<!-- 金额框 -->
+	<view class="money-box">
+		<view class="money-item">
+			<text class="title">报价金额：</text>
+			<view class="money red"><text class="rmb">¥</text>3000.00</view>
+		</view>
+		<view class="money-item">
+			<text class="title">未付金额：</text>
+			<view class="money"><text class="rmb">¥</text>2000.00</view>
+		</view>
+		<view class="money-item">
+			<text class="title">已付金额：</text>
+			<view class="money red"><text class="rmb">¥</text>1000.00</view>
+		</view>
+	</view>
+
+	<!-- 按钮 -->
+	<view class="btn-group">
+		<button>商品内添加</button>
+		<button>商品外添加</button>
 	</view>
 </view>

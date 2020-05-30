@@ -1,11 +1,22 @@
 /**index.wxss**/
+.home .left-bar{
+  height: 100vh;
+  background-color: #F8F9FB;
+}
+.home .left-tab ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
 .home {
   display: flex;
+  overflow: hidden;
 }
 
 .home .left-tab {
   width: 100px;
-  height: 100vh;
+  height: 90vh;
   background-color: #F8F9FB;
 }
 
@@ -415,11 +426,7 @@
   display: flex;
 }
 
-.home .left-tab {
-  width: 100px;
-  height: 100vh;
-  background-color: #F8F9FB;
-}
+
 
 .home .left-tab .item-tab {
   position: relative;
@@ -461,9 +468,6 @@
   text-align: center;
 }
 
-.home .right-list {
-  height: 100vh;
-}
 
 .home .right-list .item-product {
   font-family: Source Han Sans CN;
@@ -602,3 +606,98 @@
   color: #fff;
   z-index: 1;
 }
+
+.home .add-goods-btn{
+  position: fixed;
+  bottom: 30rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.home .add-goods-btn .btn{
+  width:690rpx;
+  height:80rpx;
+  background:rgba(51,144,255,1);
+  border-radius:39rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: normal;
+  font-size: 28rpx;
+}
+.home .add-goods-btn .btn:active{
+  opacity: 0.5;
+}
+
+
+.home .add-item-modal{
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform:translate(-50%,-75%);
+}
+
+.home .add-item-modal .content{
+  background: #fff;
+  border-radius: 10rpx;
+  width:490rpx;
+}
+
+.home .add-item-modal .content .title{
+  padding-top: 20rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+.home .add-item-modal .content .body{
+  padding:30rpx;
+}
+
+.home .add-item-modal .content .body .item-input{
+  border: 2rpx solid #E5E5E5;
+  border-radius: 8rpx;
+  height: 50rpx;
+  text-align: center;
+}
+
+.home .add-item-modal .content .foot{
+  display: flex;
+  align-items: center;
+  border-top: 2rpx solid #E5E5E5;
+}
+.home .add-item-modal .content .foot .item-btn{
+  flex: 1;
+  font-size: 32rpx;
+  font-weight: normal;
+  background: #fff;
+}
+.home .add-item-modal .content .foot .item-btn:active{
+  background: rgba(229,229,229,0.5);
+}
+.home .add-item-modal .content .foot .item-btn:first-child{
+  border-right: 2rpx solid #E5E5E5;
+}
+
+.home .add-item-modal .content .foot .item-btn.cur{
+  color: #05C160;
+}
+
+.black-bg{
+  position: fixed;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+
+
+
+

@@ -1,0 +1,55 @@
+<view class="build-manage bg">
+<!--    选择的座-->
+    <view class="select-room-bar">
+        <view class="title">
+            <text>小区座号</text>
+            <image class="img-del" src="{{servenImg + 'order_list_clear.png'}}"></image>
+        </view>
+        <view class="list">
+            <view class="item">1座</view>
+            <view class="item cur">1座</view>
+            <view class="item">1座</view>
+            <view class="item">1座</view>
+            <view class="item">1座</view>
+            <view class="item">1座</view>
+            <view class="item add">+</view>
+        </view>
+    </view>
+
+    <view class="select-room-bar">
+        <view class="title">
+            <text>2座楼层</text>
+            <image class="img-del" src="{{servenImg + 'order_list_clear.png'}}"></image>
+        </view>
+        <view class="list">
+            <view class="item">1座</view>
+            <view class="item cur">1座</view>
+            <view class="item">1座</view>
+            <view class="item">1座</view>
+            <view class="item">1座</view>
+            <view class="item">1座</view>
+            <view class="item add">+</view>
+        </view>
+    </view>
+
+    <view class="select-room-bar">
+        <view class="title">
+            <text>每层房号</text>
+            <image class="img-del" src="{{servenImg + 'order_list_clear.png'}}"></image>
+        </view>
+        <view class="list">
+            <view class="item">1座</view>
+            <view class="item cur">1座</view>
+            <view class="item">1座</view>
+            <view class="item">1座</view>
+            <view class="item">1座</view>
+            <view class="item">1座</view>
+            <view class="item add">+</view>
+        </view>
+    </view>
+
+    <!--	保存-->
+    <view class="save-bottom">
+        <button class="btn" bindtap="saveHandle">保存</button>
+    </view>
+</view>

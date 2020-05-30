@@ -24,4 +24,11 @@ Page({
       index: e.detail.value
     })
   },
+
+  //保存-点击
+  setAddItem(){
+    wx.navigateTo({
+      url: '../goodsMassage/goodsMassage',
+    })
+  }
 })

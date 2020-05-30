@@ -1,0 +1,87 @@
+<view>
+	<!--轮播图 -->
+	<swiper autoplay="true" interval="3000" duration="500" circular="true" class="product-pic">
+		<block>
+			<swiper-item style="width: 500px;">
+				<view class="item">
+          <image style="width: 100%;height: 100%;" src="{{detailsList.url}}"></image>
+        </view>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<!-- 标题框 -->
+	<view class="product-title">
+		<view class="title-name">{{detailsList.name}}</view>
+		<view class="title-second">
+			月售100　好评率96%
+		</view>
+		<view class="product-money-text">
+			<view class="money"><text class="rmb">¥</text>{{detailsList.selling_total_price}}</view>
+			<view class="sum">总共1项</view>
+		</view>
+	</view>
+
+	<!-- 详情列表 -->
+	<view class="product-detail">
+		<view class="title">
+			<text class="line"></text>商品详情
+		</view>
+		<view class="detail">
+
+			<view class="item" wx:for="{{templateList}}" wx:for-item="item" wx:for-index="key" wx:key="index">
+				<text class="name">{{key}} :</text>{{item}}
+			</view>
+
+		</view>
+	</view>
+
+	<!-- 脚步 -->
+	<view class="product-footer">
+		<button class="cart-btn" bindtap="goAddGoodsTwo">
+			编辑
+		</button>
+	</view>
+
+	<!-- 弹窗--选好了 -->
+	 <view class="selsect-norms" wx:if="{{showCartModel}}">
+    <view class="product">
+      <view class="pic">
+        <image src="{{detailsList.url}}"></image>
+      </view>
+      <view class="detail">
+        <view class="title">
+          <view class="name">{{detailsList.name}}</view>
+          <view class="clear">
+            <image class="list-clear" src="{{servenImg + 'order_list_clear.png'}}"></image>
+            清空
+          </view>
+        </view>
+
+        <view class="yisuan">
+          已选：{{selected}}
+        </view>
+
+        <view class="money">
+          <text class="rmb">¥</text>{{detailsList.selling_total_price}}
+        </view>
+      </view>
+    </view>
+    <scroll-view scroll-y="true" scroll-with-animation="true" class="material-selection-box">
+
+      <view class="selection-list" wx:for="{{templateListInfo}}" wx:for-item="item" wx:for-index="key" wx:key="index">
+        <view class="title">{{key}}</view>
+        <view class="list">
+          <view class="{{changeIndex === index ? 'item cur' : 'item' }}" wx:for="{{item}}" data-item="{{items}}" wx:for-item="items" wx:key="{{index}}" data-id="{{index}}" bindtap="changeType">{{items}}</view>
+        </view>
+      </view>
+
+
+    </scroll-view>
+    <view class="have-chosen-box" bindtap="addCartNum" data-id="{{detailsList}}" >
+      <button class="have-chosen-btn">选好了</button>
+    </view>
+  </view>
+	<!--黑色背景-->
+	<view class="black-background" wx:if="{{showCartModel}}" bindtap="hideModel"></view>
+</view>

@@ -1,4 +1,4 @@
-// pages/manage/manage.js
+// pages/projectRelease/projectRelease.js
 const app = getApp()
 Page({
 
@@ -6,8 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    servenImg: '',
-
+    imgUrl:""
   },
 
   /**
@@ -15,32 +14,15 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      servenImg: app.uploadImg.url,
+      imgUrl: app.uploadImg.url
     })
   },
 
-  // 跳转到用户管理
-  goHouserManage(){
+  goAddHouseType(){
     wx.navigateTo({
-      url: '../houseManage/houseManage',
+      url:"../addHouseMange/addHouseMange"
     })
   },
-
-  // 跳转到楼盘信息
-  goBuildManage(){
-    wx.navigateTo({
-      url: '../buildManage/buildManage',
-    })
-  },
-
-  //跳转到商品管理
-  goGoodsMassage(){
-    wx.navigateTo({
-      url: '../goodsMassage/goodsMassage',
-    })
-  },
-  
-  
 
   /**
    * 生命周期函数--监听页面初次渲染完成

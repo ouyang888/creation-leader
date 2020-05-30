@@ -1,4 +1,4 @@
-// pages/manage/manage.js
+// pages/productDetail/productDetail.js
 const app = getApp()
 Page({
 
@@ -6,8 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    servenImg: '',
-
+    servenImg: ""
   },
 
   /**
@@ -18,29 +17,12 @@ Page({
       servenImg: app.uploadImg.url,
     })
   },
-
-  // 跳转到用户管理
-  goHouserManage(){
+  // 跳转到编辑商品
+  goAddGoodsTwo() {
     wx.navigateTo({
-      url: '../houseManage/houseManage',
+      url: '../addGoodsTwo/addGoodsTwo',
     })
   },
-
-  // 跳转到楼盘信息
-  goBuildManage(){
-    wx.navigateTo({
-      url: '../buildManage/buildManage',
-    })
-  },
-
-  //跳转到商品管理
-  goGoodsMassage(){
-    wx.navigateTo({
-      url: '../goodsMassage/goodsMassage',
-    })
-  },
-  
-  
 
   /**
    * 生命周期函数--监听页面初次渲染完成
