@@ -1,4 +1,4 @@
-// pages/houseType/houseType.js
+// pages/projectRelease/projectRelease.js
 const app = getApp()
 Page({
 
@@ -6,8 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    servenImg: '',
-    
+    imgUrl:""
   },
 
   /**
@@ -15,14 +14,13 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      servenImg: app.uploadImg.url,
+      imgUrl: app.uploadImg.url
     })
   },
 
-  //保存
-  saveHouseType(){
+  goAddHouseType(){
     wx.navigateTo({
-      url: '../houseList/houseList',
+      url:"../addHouseProduct/addHouseProduct"
     })
   },
 

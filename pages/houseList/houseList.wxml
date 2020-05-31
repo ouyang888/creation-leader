@@ -14,7 +14,7 @@
 		<view class="item-product not-project" wx:for="{{productList}}" wx:key="index">
 			<view class="product-list">
 				<view class="item" wx:for="{{item.product}}" wx:key="id">
-					<view class="pic"></view>
+					<view class="pic" bindtap="goEditType" data-index="{{index}}"></view>
 					<view class="detail">
 						<view class="product-name">
 							<text>{{item.productName}}</text>

@@ -50,25 +50,10 @@
 				</view>
 			</view>
 		</view>
-
-  
-
-  
-
-    
-
-  
-
-   
-
-   
-
-    
-
 	</view>
 
   <!-- 保存 -->
   <view class="save-btn">
-    <button class="btn">保存</button>
+    <button class="btn" bindtap="saveHouseType">保存</button>
   </view>
 </view>

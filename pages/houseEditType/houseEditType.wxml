@@ -34,7 +34,7 @@
 			1.4厚双层中空钢化玻璃
 		</view>
 		<view class="save-bottom">
-			<button class="btn">保存</button>
+			<button class="btn" bindtap="setHouseEdit">保存</button>
 		</view>
 	</view>
 </view>

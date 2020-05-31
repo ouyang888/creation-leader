@@ -1,4 +1,4 @@
-// pages/projectRelease/projectRelease.js
+// pages/houseManage/houseManage.js
 const app = getApp()
 Page({
 
@@ -18,9 +18,9 @@ Page({
     })
   },
 
-  goAddHouseType(){
+  goHouseList(){
     wx.navigateTo({
-      url:"../addHouseMange/addHouseMange"
+      url: '../houseList/houseList',
     })
   },
 

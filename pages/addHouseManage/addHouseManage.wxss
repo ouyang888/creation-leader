@@ -1,0 +1,32 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 92%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-top: 30rpx;
+}
+
+.houseBox {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 7rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10rpx;
+  padding: 30rpx;
+  margin-top: 30rpx;
+}
+
+.houseBox image {
+  width: 270rpx;
+  height: 206rpx;
+  border-radius: 10px;
+}
+
+.houseFont {
+  text-align: center;
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #2A2A2A;
+  padding-top: 31rpx;
+}

@@ -19,10 +19,10 @@ Page({
     })
   },
 
-  // 跳转到用户管理
-  goHouserManage(){
+  // 跳转到户型管理
+  goAddHouserManage(){
     wx.navigateTo({
-      url: '../houseManage/houseManage',
+      url: '../addHouseManage/addHouseManage',
     })
   },
 
@@ -37,6 +37,13 @@ Page({
   goGoodsMassage(){
     wx.navigateTo({
       url: '../goodsMassage/goodsMassage',
+    })
+  },
+
+  //跳转到项目发布
+  goHouseManage(){
+    wx.navigateTo({
+      url: '../houseManage/houseManage',
     })
   },
   

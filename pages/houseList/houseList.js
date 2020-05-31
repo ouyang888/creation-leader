@@ -97,5 +97,21 @@ Page({
   //右侧栏-点击标题-收缩效果
   handleTitle(data) {
       let index = data.currentTarget.dataset.index;
+  },
+
+  //跳转到多规格或者非多规格--页面
+  goEditType(index){
+    if(index.currentTarget.dataset.index === 0){
+      // 跳转到多规格
+      wx.navigateTo({
+        url: '../houseType/houseType',
+      })
+    }else{
+      //跳转到非多规格
+      wx.navigateTo({
+        url: '../houseEditType/houseEditType',
+      })
+    }
+   
   }
 })

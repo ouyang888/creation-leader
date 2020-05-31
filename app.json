@@ -1,28 +1,36 @@
 {
   "pages": [
+    "pages/order/order",
     "pages/manage/manage",
-    "pages/goodsMassage/goodsMassage",
-    "pages/productDetail/productDetail", 
-    "pages/addGoodsTwo/addGoodsTwo",
-    "pages/buildManage/buildManage",
+    "pages/houseType/houseType",
+    "pages/houseList/houseList",
     "pages/houseManage/houseManage",
-    "pages/addHouseMange/addHouseMange",
+    "pages/houseEditType/houseEditType",
+    
+   
+
+    
+
+    
+    "pages/addHouseProduct/addHouseProduct",
+    "pages/productDetail/productDetail", 
+    "pages/projectRelease/shopList/shopList",
+    "pages/quotation/quotation",
+    
+    "pages/goodsMassage/goodsMassage",
+    
+    "pages/addHouseManage/addHouseManage",
+    "pages/addGoods/addGoods",
+    "pages/buildManage/buildManage",
+    "pages/addGoodsTwo/addGoodsTwo",
+    
+    
     
 
 
-
-
-
-
-
-    "pages/houseList/houseList",
-    "pages/addGoods/addGoods",
-    "pages/order/order",
+    
     "pages/register/nextRegister/nextRegister",
-    "pages/projectRelease/shopList/shopList",
-    "pages/houseType/houseType",
-    "pages/houseEditType/houseEditType",
-    "pages/quotation/quotation",
+    
     "pages/index/index",
     "pages/login/login",
     "pages/register/register"

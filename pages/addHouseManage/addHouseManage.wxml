@@ -1,12 +1,17 @@
 <view class="bg">
   <view class="box">
-    <view class="houseBox" bindtap="goHouseList">
+    <view class="houseBox">
       <image src="{{imgUrl + 'huxing.png'}}"></image>
       <view class="houseFont">A户型80m</view>
     </view>
     <view class="houseBox">
       <image src="{{imgUrl + 'huxing.png'}}"></image>
       <view class="houseFont">A户型80m</view>
+    </view>
+
+    <view class="houseBox" bindtap="goAddHouseType">
+      <image src="{{imgUrl + 'add_house_manage.png'}}"></image>
+      <view class="houseFont">添加户型</view>
     </view>
   </view>
 </view>

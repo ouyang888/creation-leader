@@ -21,11 +21,11 @@
 
         <image bindtap="goBuildManage" class="nav-img" src="../../images/loupan.png"/>
 
-        <image bindtap="goHouserManage" class="nav-img" src="../../images/huxingguanli.png"/>
+        <image bindtap="goAddHouserManage" class="nav-img" src="../../images/huxingguanli.png"/>
 
         <image bindtap="goGoodsMassage" class="nav-img" src="../../images/shangpinguanli.png"/>
 
-        <image class="nav-img" src="../../images/xiangmfabu.png"/>
+        <image bindtap="goHouseManage" class="nav-img" src="../../images/xiangmfabu.png"/>
 
     </view>
 

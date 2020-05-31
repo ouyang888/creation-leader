@@ -15,6 +15,13 @@ Page({
 
   },
 
+  //保存
+  setHouseEdit(){
+    wx.navigateTo({
+      url: '../houseList/houseList',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
