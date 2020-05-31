@@ -1,5 +1,6 @@
 // pages/login/login.js
 const app = getApp()
+let storage = require("../../utils/storage.js")
 Page({
 
   /**
@@ -7,25 +8,52 @@ Page({
    */
   data: {
     imgUrl: "",
-    phone:""
+    phone: "",
+    password: ""
   },
-  phoneChange: function (e) {
+  phoneChange: function(e) {
     let that = this
     that.setData({
       phone: e.detail.value
     })
   },
-  login: function (e) {
+  passwordChange: function(e) {
+    let that = this
+    that.setData({
+      password: e.detail.value
+    })
+  },
+  login: function(e) {
     if (this.data.phone == "") {
       wx.showToast({
         title: '请输入手机号',
         icon: 'none',
-        duration: 2000//持续的时间
+        duration: 2000 //持续的时间
       })
+      return;
     }
-
+    if (this.data.password == "") {
+      wx.showToast({
+        title: '请输入密码',
+        icon: 'none',
+        duration: 2000 //持续的时间
+      })
+      return;
+    }
+    let item = {
+      tel: this.data.phone,
+      password: this.data.password
+    }
+    app.xhr('POST', app.apiUrl.login, item, '', (res) => {
+      if (res.data.code === 0) {
+        storage.set("token", res.data.data)
+        wx.switchTab({
+          url:"../manage/manage"
+        })
+      }
+    })
   },
-  gotoRegister:function(){
+  gotoRegister: function() {
     wx.navigateTo({
       url: '../register/register',
     })

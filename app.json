@@ -1,38 +1,22 @@
 {
   "pages": [
-    "pages/order/order",
     "pages/manage/manage",
+    "pages/order/order",
+    "pages/login/login",
     "pages/houseType/houseType",
     "pages/houseList/houseList",
     "pages/houseManage/houseManage",
     "pages/houseEditType/houseEditType",
-    
-   
-
-    
-
-    
     "pages/addHouseProduct/addHouseProduct",
-    "pages/productDetail/productDetail", 
+    "pages/productDetail/productDetail",
     "pages/projectRelease/shopList/shopList",
     "pages/quotation/quotation",
-    
     "pages/goodsMassage/goodsMassage",
-    
     "pages/addHouseManage/addHouseManage",
     "pages/addGoods/addGoods",
     "pages/buildManage/buildManage",
     "pages/addGoodsTwo/addGoodsTwo",
-    
-    
-    
-
-
-    
     "pages/register/nextRegister/nextRegister",
-    
-    "pages/index/index",
-    "pages/login/login",
     "pages/register/register"
   ],
   "window": {
@@ -41,10 +25,9 @@
     "navigationBarTitleText": "善创",
     "navigationBarTextStyle": "black"
   },
-
-
   "tabBar": {
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/order/order",
         "text": "订单",
         "iconPath": "icon/icon_order.png",
@@ -61,10 +44,7 @@
     "selectedColor": "#3390FF",
     "backgroundColor": "#FFFFFF",
     "position": "bottom"
-
   },
-
-
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

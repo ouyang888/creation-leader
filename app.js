@@ -1,6 +1,7 @@
 //app.js
+let storage = require('utils/storage.js')
 App({
-  onLoad: function () {
+  onLoad: function() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -36,36 +37,36 @@ App({
     userInfo: null
   },
   //弹框
-  toast: function (title, icon, cb, duration = 2500) {
+  toast: function(title, icon, cb, duration = 500) {
     wx.showToast({
       title,
       icon,
       duration,
       mask: true,
       success: () => {
-        if (typeof (cb) == "function") {
+        if (typeof(cb) == "function") {
           cb()
         }
       }
     })
   },
   //接口前缀封装
-  xhr: function (method, url, obj = null, token = '', cb) {
+  xhr: function(method, url, obj = null, token = '', cb) {
     var that = this
     wx.request({
-      // url: 'http://interface.nat300.top/api' + url,
+      url: 'https://sandbox-api.scypaas.com' + url,
       data: obj,
       method,
       header: {
         'Content-Type': 'application/json',
         'X-TOKEN': storage.get_s("token")
       },
-      success: function (res) {
-        if (typeof (cb) == "function") {
+      success: function(res) {
+        if (typeof(cb) == "function") {
           cb(res)
         }
       },
-      fail: function (error) {
+      fail: function(error) {
         console.log(error)
       }
     })
@@ -74,4 +75,10 @@ App({
   uploadImg: {
     url: "http://q9x0aceuu.bkt.clouddn.com/"
   },
+
+
+  //接口列表
+  apiUrl: {
+    login: "/api/shop/user/login" //登录
+  }
 })

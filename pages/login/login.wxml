@@ -9,7 +9,7 @@
     <input class="phoneInput" type="number" maxlength="11" placeholder="请输入手机号" value="{{phone}}" bindinput="phoneChange" />
   </view>
   <view class="flexPsdBox">
-    <input class="passwordInput" placeholder="请输入密码" />
+    <input class="passwordInput" value="{{password}}" placeholder="请输入密码" bindinput="passwordChange" />
     <view class="eyesImg">
       <image src="{{imgUrl +'eyes.png'}}"></image>
     </view>
