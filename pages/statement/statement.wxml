@@ -1,0 +1,124 @@
+<view class="quotation bg">
+	<!-- 商品列表 -->
+	<view class="container">
+		<view class="touch-item">
+			<view class="content">
+				<view class="item">
+					<view class="left">
+						<view class="pic">
+							<image class="img" src="{{servenImg + 'shopImg.png'}}" mode="scaleToFill"></image>
+						</view>
+						<view class="left-text">
+							<view class="name">
+								百变房铝合金窗
+								<image class="img" src="{{servenImg + 'icon_hot.png'}}" mode="scaleToFill"></image>
+								<image class="img" src="{{servenImg + 'icon_good.png'}}" mode="scaleToFill"></image>
+								<image class="img" src="{{servenImg + 'icon_tag.png'}}" mode="scaleToFill"></image>
+							</view>
+							<view class="type-name">
+								凤铝1.4厚铝合金窗
+							</view>
+
+							<view class="num">数量：1</view>
+
+						</view>
+					</view>
+					<view class="right">
+						<view class="type blue">服务中</view>
+						<text class="rmb">¥</text>2100
+					</view>
+				</view>
+				<view class="item">
+					<view class="left">
+						<view class="pic">
+							<image class="img" src="{{servenImg + 'shopImg.png'}}" mode="scaleToFill"></image>
+						</view>
+						<view class="left-text">
+							<view class="name">
+								百变房铝合金窗
+								<image class="img" src="{{servenImg + 'icon_hot.png'}}" mode="scaleToFill"></image>
+								<image class="img" src="{{servenImg + 'icon_good.png'}}" mode="scaleToFill"></image>
+								<image class="img" src="{{servenImg + 'icon_tag.png'}}" mode="scaleToFill"></image>
+							</view>
+							<view class="type-name">
+								凤铝1.4厚铝合金窗
+							</view>
+
+							<view class="num">数量：1</view>
+
+						</view>
+					</view>
+					<view class="right">
+						<view class="type green">已完工</view>
+						<text class="rmb">¥</text>2100
+					</view>
+				</view>
+				<view class="item">
+					<view class="left">
+						<view class="pic">
+							<image class="img" src="{{servenImg + 'shopImg.png'}}" mode="scaleToFill"></image>
+						</view>
+						<view class="left-text">
+							<view class="name">
+								百变房铝合金窗
+								<image class="img" src="{{servenImg + 'icon_hot.png'}}" mode="scaleToFill"></image>
+								<image class="img" src="{{servenImg + 'icon_good.png'}}" mode="scaleToFill"></image>
+								<image class="img" src="{{servenImg + 'icon_tag.png'}}" mode="scaleToFill"></image>
+							</view>
+							<view class="type-name">
+								凤铝1.4厚铝合金窗
+							</view>
+
+							<view class="num">数量：1</view>
+
+						</view>
+					</view>
+					<view class="right">
+						<view class="type grey">未开工</view>
+						<text class="rmb">¥</text>2100
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<!-- 金额框 -->
+	<view class="money-box">
+		<view class="money-item">
+			<text class="title">报价金额：</text>
+			<view class="money red"><text class="rmb">¥</text>3000.00</view>
+		</view>
+		<view class="money-item">
+			<text class="title">未付金额：</text>
+			<view class="money"><text class="rmb">¥</text>2000.00</view>
+		</view>
+		<view class="money-item">
+			<text class="title">已付金额：</text>
+			<view class="money red"><text class="rmb">¥</text>1000.00</view>
+		</view>
+	</view>
+
+	<!-- 按钮--等待验收 -->
+	<view class="btn-group" style="display:none;">
+		<button class="btn grey">客户验收中</button>
+		<button class="btn grey">确认</button>
+	</view>
+
+	<!-- 按钮--客户验收 -->
+	<view class="btn-group" style="display:none;">
+		<button class="btn blue">客户验收</button>
+		<button class="btn grey">确认</button>
+	</view>
+
+	<!-- 按钮--客户验收-确定开工 -->
+	<view class="btn-group" >
+		<button class="btn blue">客户验收</button>
+		<button class="btn grey">确认</button>
+	</view>
+
+	<!-- 按钮--客户验收-确定 -->
+	<view class="btn-group" style="display:none;">
+		<button class="btn grey">客户已验收</button>
+		<button class="btn blue">确认</button>
+	</view>
+</view>

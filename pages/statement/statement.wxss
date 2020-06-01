@@ -12,7 +12,6 @@
   justify-content: space-between;
   width: 100%;
   overflow: hidden;
-  background: #fff;
   border-radius: 10rpx;
   box-shadow: 0px 7rpx 27rpx 0px rgba(0, 0, 0, 0.05);
   margin-top: 20rpx;
@@ -20,13 +19,6 @@
 
 .content {
   width: 100%;
-  margin-right: 0;
-  box-sizing: border-box;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  -webkit-transform: translateX(90px);
-  transform: translateX(90px);
-  margin-left: -90px;
 }
 
 .del {
@@ -57,6 +49,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20rpx;
+  background: #fff;
+}
+.quotation .container .content .item:last-child{
+  margin-bottom: 0;
 }
 
 .quotation .container .content .item .left {
@@ -113,6 +110,29 @@
   font-weight: 500;
 }
 
+.quotation .container .content .item .right .type {
+  width: 100rpx;
+  height: 30rpx;
+  border-radius:6rpx;
+  font-size: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 27rpx;
+}
+
+.quotation .container .content .item .right .type.blue{
+  background: rgba(61, 153, 255, 1);
+}
+.quotation .container .content .item .right .type.green{
+ background:rgba(29,195,41,1);
+}
+
+.quotation .container .content .item .right .type.grey{
+  background:rgba(181,181,181,1);
+}
+
 .quotation .container .content .item .right .rmb {
   font-size: 24rpx;
   margin-right: 5rpx;
@@ -149,16 +169,16 @@
   font-weight: 500;
 }
 
-.quotation .money-box .money-item .money.red{
+.quotation .money-box .money-item .money.red {
   color: rgba(255, 37, 34, 1);
 }
 
-.quotation .money-box .money-item .money .rmb{
+.quotation .money-box .money-item .money .rmb {
   font-size: 24rpx;
   margin-right: 3rpx;
 }
 
-.quotation .btn-group{
+.quotation .btn-group {
   margin: 0 20rpx;
   display: flex;
   align-items: center;
@@ -166,26 +186,26 @@
   margin-top: 140rpx;
 }
 
-.quotation .btn-group .btn{
-  width:315rpx;
+.quotation .btn-group .btn {
+  width: 315rpx;
   font-weight: normal;
   color: #fff;
-  height:80rpx;
-  border-radius:39rpx;
+  height: 80rpx;
+  border-radius: 39rpx;
   font-size: 28rpx;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.quotation .btn-group .btn:active{
+.quotation .btn-group .btn:active {
   opacity: 0.5;
 }
 
-.quotation .btn-group .btn.grey{
+.quotation .btn-group .btn.grey {
   background: #B5B5B5;
 }
 
-.quotation .btn-group .btn.blue{
+.quotation .btn-group .btn.blue {
   background: #338FFF;
 }

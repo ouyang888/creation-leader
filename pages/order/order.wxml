@@ -7,16 +7,16 @@
 			<input class="search-input" placeholder="搜索我的订单"></input>
 		</view>
 		<view class="tab-bar">
-			<view class="item ">报价</view>
+			<view class="item cur">报价</view>
 			<view class="item ">服务中(36)</view>
 			<view class="item ">待结算</view>
-			<view class="item cur">历史单</view>
+			<view class="item ">历史单</view>
 		</view>
 	</view>
 
 	<!-- 列表 -->
 	<scroll-view class="list" scroll-y="true">
-		<view class="item">
+		<view class="item" bindtap="goQuotation">
 			<view class="room">
 				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
 				<view class="state cur">服务中</view>
@@ -27,7 +27,7 @@
 				<text>13434124520</text>
 			</view>
 		</view>
-		<view class="item">
+		<view class="item" bindtap="goStatement">
 			<view class="room">
 				<view class="name">碧桂园凤凰湾听涛宛10座1005房</view>
 				<view class="state cur">服务中</view>

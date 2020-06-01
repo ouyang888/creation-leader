@@ -18,6 +18,20 @@ Page({
     })
   },
 
+  //跳转到报价单
+  goQuotation() {
+    wx.navigateTo({
+      url: '../quotation/quotation',
+    })
+  },
+
+  //跳转到结算单
+  goStatement(){
+    wx.navigateTo({
+      url: '../statement/statement',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

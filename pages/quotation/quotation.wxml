@@ -48,9 +48,33 @@
 		</view>
 	</view>
 
-	<!-- 按钮 -->
+	<!-- 按钮--商品内添加/商品外添加 -->
+	<view class="btn-group" style="display:none;">
+		<button class="btn grey">商品内添加</button>
+		<button class="btn blue">商品外添加</button>
+	</view>
+
+	<!-- 按钮--等待验收 -->
+	<view class="btn-group" style="display:none;">
+		<button class="btn grey">客户验收中</button>
+		<button class="btn grey">确认</button>
+	</view>
+
+		<!-- 按钮--客户验收 -->
+	<view class="btn-group" style="display:none;">
+		<button class="btn blue">客户验收</button>
+		<button class="btn grey">确认</button>
+	</view>
+
+		<!-- 按钮--客户验收-删除 -->
+	<view class="btn-group" style="display:none;">
+		<button class="btn blue">商品内/外添加</button>
+		<button class="btn blue">发起确认</button>
+	</view>
+
+		<!-- 按钮--客户验收-确定 -->
 	<view class="btn-group">
-		<button>商品内添加</button>
-		<button>商品外添加</button>
+		<button class="btn grey">客户已验收</button>
+		<button class="btn blue">确认</button>
 	</view>
 </view>
